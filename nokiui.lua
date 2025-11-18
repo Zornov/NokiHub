@@ -15,13 +15,14 @@ function NokiHubUI.new(opts)
     local gui = make(pg, "ScreenGui", {Name="NokiHubUI", ResetOnSpawn=false})
 
     local card = make(gui, "Frame", {
-        Name="Card",
-        AnchorPoint=Vector2.new(0,1),
-        Position=UDim2.new(0,24,1,-120),
-        Size=UDim2.fromOffset(360,190),
-        BackgroundColor3=Color3.fromRGB(10,10,14),
-        BorderSizePixel=0
+        Name = "Card",
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, 0),
+        Size = UDim2.fromOffset(360, 190),
+        BackgroundColor3 = Color3.fromRGB(10, 10, 14),
+        BorderSizePixel = 0
     })
+
 
     local corner = Instance.new("UICorner")
     corner.CornerRadius = UDim.new(0,22)
